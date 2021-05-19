@@ -5,7 +5,7 @@ import static spark.Spark.*;
 
 public class BRTService {
     public static void main( String[] args ){
-        staticFiles.location("/public");
+        staticFiles.location("/static");
         port(getPort());
 
         SimulatorBRTImpl simulatorBRT= new SimulatorBRTImpl();

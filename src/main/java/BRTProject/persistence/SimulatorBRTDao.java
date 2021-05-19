@@ -22,13 +22,13 @@ public class SimulatorBRTDao {
     public Station getStationById(String id){
         Station station = null;
         try {
-            String sql = "SELECT * FROM ESTACION WHERE IDNOMBRE ='"+ id +"'";
+            String sql = "SELECT * FROM ESTACION WHERE IDNOMBRE ='"+id+"'";
             Statement stm = c.createStatement();
             ResultSet rs = stm.executeQuery(sql);
             while (rs.next()) {
                 String idName = rs.getString("idnombre");
                 int maxCapacity = rs.getInt("capacidadmaxima");
-                int peopleInside = rs.getInt("personasesperado");
+                int peopleInside = rs.getInt("personasesperando");
                 String zone = rs.getString("zona");
                 station = new Station(idName, maxCapacity, peopleInside, zone);
             }
@@ -93,7 +93,6 @@ public class SimulatorBRTDao {
 
         HashMap<String,Long> stationsAndAverage = new HashMap<>();
         try {
-
             String sql = "SELECT * FROM ESTACION WHERE ZONA ='"+zone+"'";
             Statement stm = c.createStatement();
             ResultSet rs = stm.executeQuery(sql);
@@ -101,7 +100,7 @@ public class SimulatorBRTDao {
             while (rs.next()){
                 String idName = rs.getString("idnombre");
                 long maxCapacity = rs.getLong("capacidadmaxima");
-                long peopleInside = rs.getLong("personasesperado");
+                long peopleInside = rs.getLong("personasesperando");
                 long average = (peopleInside*100)/maxCapacity;
                 stationsAndAverage.put(idName,average);
             }

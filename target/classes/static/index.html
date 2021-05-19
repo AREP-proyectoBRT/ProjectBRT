@@ -28,10 +28,12 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-
+    <!--  Backend functionalities -->
+    <script src="js/app.js"></script>
+    <script src="js/controlViewOne.js"></script>
 </head>
 <!-- body -->
-<body>
+<body onload="app.getAllZone()">
 <div class="header">
     <div class="container">
         <!--  header inner -->
@@ -136,23 +138,23 @@
                 <div class="col-sm-4">
                     <div class="section_1">
 
-                        <div><button type="button"  class="date-bt"><a href="vista2.html">Zona A</a></button><img src="images/ZonaA.jpg"  width="559" height="235" style="max-width: 100%;"></div>
-                        <button type="button" class="date-bt">95%</button>
+                        <div><button type="button"  class="date-bt"><a href="vista2.html?zone=A">Zona A</a></button><img src="images/ZonaA.jpg"  width="559" height="235" style="max-width: 100%;"></div>
+                        <button id="zonaA" type="button" class="date-bt"></button>
                         <p></p>
 
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="section_1">
-                        <div><button type="button" class="date-bt">ZONA B</button><img src="images/ZonaB.jpg"  width="559" height="235" style="max-width: 100%;"></div>
-                        <button type="button" class="date-bt">25%</button>
+                        <div><button type="button" class="date-bt"><a href="vista2.html?zone=B">ZONA B</a></button><img src="images/ZonaB.jpg"  width="559" height="235" style="max-width: 100%;"></div>
+                        <button id="zonaB" type="button" class="date-bt"></button>
                         <p></p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="section_1">
-                        <div><button type="button" class="date-bt">ZONA C</button><img src="images/ZonaC.jpg"  width="559" height="235" style="max-width: 100%;"></div>
-                        <button type="button" class="date-bt">50%</button>
+                        <div><button type="button" class="date-bt"><a href="vista2.html?zone=C">ZONA C</a></button><img src="images/ZonaC.jpg"  width="559" height="235" style="max-width: 100%;"></div>
+                        <button id="zonaC" type="button" class="date-bt"></button>
                         <p></p>
                     </div>
                 </div>
@@ -163,22 +165,22 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="section_1">
-                        <div><button type="button" class="date-bt">ZONA H Y T</button><img src="images/ZonaHYT.jpg"  width="559" height="235" style="max-width: 100%;"></div>
-                        <button type="button" class="date-bt">12%</button>
+                        <div><button type="button" class="date-bt"><a href="vista2.html?zone=D">ZONA D</a></button><img src="images/ZonaHYT.jpg"  width="559" height="235" style="max-width: 100%;"></div>
+                        <button id="zonaD" type="button" class="date-bt"></button>
                         <p></p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="section_1">
-                        <div><button type="button" class="date-bt">ZONA D</button><img src="images/ZonaD.jpg"  width="559" height="235" style="max-width: 100%;"></div>
-                        <button type="button" class="date-bt">75%</button>
+                        <div><button type="button" class="date-bt"><a href="vista2.html?zone=E">ZONA E</a></button><img src="images/ZonaD.jpg"  width="559" height="235" style="max-width: 100%;"></div>
+                        <button id="zonaE" type="button" class="date-bt"></button>
                         <p></p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="section_1">
-                        <div><button type="button" class="date-bt">ZONA G</button><img src="images/ZonaG.jpg"  width="559" height="235" style="max-width: 100%;"></div>
-                        <button type="button" class="date-bt">45%</button>
+                        <div><button type="button" class="date-bt"><a href="vista2.html?zone=F">ZONA F</a></button><img src="images/ZonaG.jpg"  width="559" height="235" style="max-width: 100%;"></div>
+                        <button id="zonaF" type="button" class="date-bt"></button>
                         <p></p>
                     </div>
                 </div>
@@ -188,22 +190,22 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="section_1">
-                        <div><button type="button" class="date-bt">ZONA J</button><img src="images/ZonaJ.jpg"  width="559" height="235" style="max-width: 100%;"></div>
-                        <button type="button" class="date-bt">25%</button>
+                        <div><button type="button" class="date-bt"><a href="vista2.html?zone=G">ZONA G</a></button><img src="images/ZonaJ.jpg"  width="559" height="235" style="max-width: 100%;"></div>
+                        <button id="zonaG" type="button" class="date-bt"></button>
                         <p></p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="section_1">
-                        <div><button type="button" class="date-bt">ZONA K</button><img src="images/ZonaK.jpg"  width="559" height="235" style="max-width: 100%;"></div>
-                        <button type="button" class="date-bt">65%</button>
+                        <div><button type="button" class="date-bt"><a href="vista2.html?zone=H">ZONA H</a></button><img src="images/ZonaK.jpg"  width="559" height="235" style="max-width: 100%;"></div>
+                        <button id="zonaH" type="button" class="date-bt"></button>
                         <p></p>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="section_1">
-                        <div><button type="button" class="date-bt">ZONA L</button><img src="images/ZonaL.jpg"  width="559" height="235" style="max-width: 100%;"></div>
-                        <button type="button" class="date-bt">96%</button>
+                        <div><button type="button" class="date-bt"><a href="vista2.html?zone=I">ZONA I</a></button><img src="images/ZonaL.jpg"  width="559" height="235" style="max-width: 100%;"></div>
+                        <button id="zonaI" type="button" class="date-bt"></button>
                         <p></p>
                     </div>
                 </div>
