@@ -1,3 +1,10 @@
+### Arquitectura Empresarial
+### Arquitecturas nativas para la nube
+> Integrantes:
+> * 👩 Paula Andrea Guevara Sánchez.
+> * 👨 Daniel Felipe Muñoz Rincón.
+> * 👨 Alan Yesit Marín Medez
+
 # Arquitecturas IoT y Big Data para sistemas BRT
 
 [![danielrincon-m](https://circleci.com/gh/danielrincon-m/AREP_LAB4.svg?style=svg)](https://app.circleci.com/pipelines/github/danielrincon-m/AREP_LAB4)
@@ -5,7 +12,7 @@
 
 ## Descripción ☁️
 
-En este laboratorio será desarrollado un prototipo de aplicación web basada en microservicios, para la cual utilizaremos la nube de Amazon. El proyecto estará compuesto por una página web pública corriendo en un contenedor Amazon S3 con la cual podrá interactuar el usuario, un servicio en Spark montado sobre una máquina virtual Amazon EC2, y un servicio de API Gateway, el cual será el puente entre los otros dos componentes.
+En este documento hablaremos sobre la importancia que tienen las nuevas tecnologías a la hora de optimizar la movilidad en los sistemas BRT. Abordaremos una solución a la falta de flexibilidad en la planeación de rutas, proponiendo una programación dinámica de rutas gracias a tecnologías como IoT y Big Data alojada en la nube en AWS.
 
 La arquitectura de los servicios se muestra a continuación:
 
