@@ -2,8 +2,8 @@
 ### Arquitecturas nativas para la nube
 > Integrantes:
 > * 👩 Paula Andrea Guevara Sánchez.
-> * 👨 Daniel Felipe Muñoz Rincón.
-> * 👨 Alan Yesit Marín Medez
+> * 👨 Daniel Felipe Rincón Muñoz.
+> * 👨 Alan Yesid Marín Medez.
 
 # Arquitecturas IoT y Big Data para sistemas BRT
 
@@ -30,7 +30,9 @@ Vamos a realizar un breve recorrido por cada uno de los servicios.
 
 ## Video de demostración 📹
 
-Se realizó un video demostrando y explicando el funcionamiento de todo el sistema, este video puede ser encontrado [AQUÍ](demostracion.mp4).
+Se realizó un video demostrando y explicando el funcionamiento de todo el sistema.
+
+https://user-images.githubusercontent.com/46799459/119025556-dcad9480-b969-11eb-80c4-130b3f784466.mp4
 
 ## Descarga del proyecto ⬇️
 
