@@ -85,8 +85,10 @@ Este laboratorio no cuenta con documento de diseño.
 
 **Daniel Felipe Rincón Muñoz:** *Planeación y desarrollo del proyecto* -
 [Perfil de GitHub](https://github.com/danielrincon-m)
+
 **Paula Andrea Guevara Sánchez:** *Planeación y desarrollo del proyecto* -
 [Perfil de GitHub](https://github.com/PaulaSanchez810)
+
 **Alan Yesit Marín Medez:** *Planeación y desarrollo del proyecto* -
 [Perfil de GitHub](https://github.com/Elan-MarMEn)
 
