@@ -39,7 +39,7 @@ Se realizó un video demostrando y explicando el funcionamiento de todo el siste
 Clone el proyecto utilizando el siguiente comando:
 
 ```
-git clone https://github.com/danielrincon-m/AREP_LAB7.git
+https://github.com/AREP-proyectoBRT/ProjectBRT.git
 ```
 
 ## Correr las pruebas unitarias 🧪
