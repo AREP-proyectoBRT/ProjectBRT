@@ -25,54 +25,6 @@ La arquitectura de la aplicación se basa en la abstracción de una API por medi
 
 Vamos a realizar un breve recorrido por cada uno de los servicios.
 
-### Temperature Service
-
-Se trata de un servicio web simple que responde a una sola petición GET en la ruta */convert/farenheit/celsius*, el servicio espera un parámetro: la temperatura que se desea convertir, el programa valida que el dato ingresado sea válido, y que se haya ingresado un dato, de lo contrario retorna mensajes de error.
-
-El servicio web está construido sobre [Spark Java](#herramientas-utilizadas-%EF%B8%8F), fué empaquetado y subido a la máquina virtual de AWS para su ejecución.
-
-### API Gateway
-
-Este servicio abstrae la API del [Temperature Service](#Temperature-Service), creando una interfaz para que otras aplicaciones puedan acceder al servicio, quitando el riesgo de que tengan un acceso mas allá del que se espera al servidor del servicio.
-
-### Web Service
-
-Se trata de una aplicación web amigable con el usuario, la cual nos presenta un formulario solicitando el valor de temperatura que deseamos convertir, en la misma ventana será presentada la respuesta una vez enviemos nuestra solicitud.
-
-## Reporte de pruebas ⭕
-
-El proyecto fué probado de dos maneras, las cuales se podrán ver a continuación:
-
-### Pruebas unitarias
-
-Se utilizó el framework [REST Assured](#herramientas-utilizadas-%EF%B8%8F) para realizar pruebas sobre la API REST desarrollada, se comprobó que las peticiones estuviesen siendo procesadas y que las respuestas de las conversiones fueran correctas, a continuación, podremos ver el código fuente de las pruebas:
-
-``` Java
-@Test
-public void valuesTest() {
-    HashMap<Float, Float> values = new HashMap<>();
-    values.put(0f, -17.7778f);
-    values.put(5f, -15f);
-    values.put(8f, -13.3333f);
-    values.put(20f, -6.66667f);
-    values.put(55f, 12.7778f);
-    values.put(78.152f, 25.64f);
-    values.put(158f, 70f);
-    values.put(2548.8556f, 1398.25311111f);
-
-    values.forEach((key, value) -> {
-        JsonConfig jsonConfig = JsonConfig.jsonConfig()
-                .numberReturnType(JsonPathConfig.NumberReturnType.BIG_DECIMAL);
-
-        given().config(RestAssured.config().jsonConfig(jsonConfig)).port(5000)
-                .param("value", key).when().get("/convert/farenheit/celsius").then()
-                .body("farenheitDegrees",
-                        closeTo(BigDecimal.valueOf(key), BigDecimal.valueOf(0.01f)))
-                .body("celsiusDegrees",
-                        closeTo(BigDecimal.valueOf(value), BigDecimal.valueOf(0.01f)));
-    });
-}
-```
 
 ### Pruebas de funcionamiento
 
