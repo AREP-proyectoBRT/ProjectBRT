@@ -28,11 +28,6 @@ La arquitectura de la aplicación se basa en la abstracción de una API por medi
 
 Vamos a realizar un breve recorrido por cada uno de los servicios.
 
-
-### Pruebas de funcionamiento
-
-Las pruebas de funcionamiento se realizaron con todo el sistema montado, probando diferentes valores, tanto válidos como no válidos, se realizaron de manera similar al estilo mostrado en el [Video de Demostración](#video-de-demostración-).
-
 ## Video de demostración 📹
 
 Se realizó un video demostrando y explicando el funcionamiento de todo el sistema, este video puede ser encontrado [AQUÍ](demostracion.mp4).
