@@ -1,9 +1,15 @@
 package BRTProject.persistence;
 
-import BRTProject.model.Station;
-
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import BRTProject.model.Bus;
+import BRTProject.model.Station;
 
 public class SimulatorBRTDao {
 
@@ -13,7 +19,7 @@ public class SimulatorBRTDao {
         try {
             this.c =  DriverManager.getConnection("jdbc:postgresql://ec2-54-87-112-29.compute-1.amazonaws.com:5432/d26fa8bmkceaih",
                             "rgxolvhkbhimzo", "178e0d48501c42f0c93cb6f388089f3d6066a28f2abd58e3263e9477d7760935");
-            c.setAutoCommit(false);
+            c.setAutoCommit(true);
         } catch (SQLException throwables) {
             System.out.println("No connection");
         }
@@ -36,6 +42,41 @@ public class SimulatorBRTDao {
         } catch (SQLException throwables) {
             System.out.println("Fallo sql");
             return null;
+        }
+    }
+
+    public List<Bus> getAllBuses() {
+        List<Bus> buses = new ArrayList<>();
+        try {
+            String sql = "SELECT * FROM bus WHERE ACTIVO = TRUE";
+            Statement stm = c.createStatement();
+            ResultSet rs = stm.executeQuery(sql);
+            while (rs.next()) {
+                String idBus = rs.getString("idbus");
+                String ruta = rs.getString("ruta");
+                String estacionActual = rs.getString("estacionactual");
+                Boolean activo = rs.getBoolean("activo");
+                int numPasajeros = rs.getInt("numeropasajerosactual");
+                int capacidad = rs.getInt("capacidadmax");
+                buses.add(new Bus(idBus, ruta, estacionActual, activo, numPasajeros, capacidad));
+            }
+            return buses;
+        } catch (SQLException throwables) {
+            System.out.println("Fallo sql");
+            throwables.printStackTrace();
+            return null;
+        }
+    }
+
+    public void changeBusOccupation(String id, int newOccupation) {
+        try {
+            System.out.println(newOccupation);
+            String sql = "UPDATE bus SET numeropasajerosactual = '" + newOccupation + "' WHERE idbus = '" + id + "'";
+            Statement stm = c.createStatement();
+            System.out.println(stm.executeUpdate(sql));
+        } catch (SQLException throwables) {
+            System.out.println("Fallo sql");
+            throwables.printStackTrace();
         }
     }
 
