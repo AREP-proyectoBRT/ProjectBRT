@@ -1,4 +1,4 @@
-# Aplicación con Amazon Gateway, EC2 y S3
+# Arquitecturas IoT y Big Data para sistemas BRT
 
 [![danielrincon-m](https://circleci.com/gh/danielrincon-m/AREP_LAB4.svg?style=svg)](https://app.circleci.com/pipelines/github/danielrincon-m/AREP_LAB4)
 <!-- [![Heroku](img/heroku_long.png)](https://nanospring.herokuapp.com/nspapp/register) -->
