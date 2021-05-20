@@ -24,9 +24,8 @@ se realizo un articulo, donde se explica en detalle el estudio realizado y sobre
 
 ## Implementación 🛡️
 
-La arquitectura de la aplicación se basa en la abstracción de una API por medio del API Gateway de Amazon, y la presentación de una interfaz amigable con el usuario por medio de una página web.
+La arquitectura de la aplicación se basa en la implementación de una API por medio del Ec2 de AWS, donde se enfoca en la recolección de datos de unos sensores, usando IoT Core y por medio de Kinesis Analitics, se realiza la colección y análisis de los datos que se enviara a la aplicación  docker Ec2 y será alojada de esta manera en una base de datos PostgreSQL y la presentación de una interfaz amigable con el usuario por medio de una página web.
 
-Vamos a realizar un breve recorrido por cada uno de los servicios.
 
 ## Video de demostración 📹
 
