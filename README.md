@@ -20,6 +20,8 @@ La arquitectura de los servicios se muestra a continuación:
 
 ## Documento de diseño 📄
 
+se realizo un articulo, donde se explica en detalle el estudio realizado y sobre la solución la aquitetura.
+
 [Paper](https://github.com/AREP-proyectoBRT/ProjectBRT/blob/main/paper/PROYECTO-AREP.pdf)
 
 ## Implementación 🛡️
