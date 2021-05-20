@@ -81,10 +81,14 @@ Este laboratorio no cuenta con documento de diseño.
 * [AWS](https://aws.amazon.com/es/) - Despliegue en la nube
 * [REST Assured](https://rest-assured.io/) - Herramienta de pruebas para el API REST
 
-## Autor 🧔
+## Autores
 
 **Daniel Felipe Rincón Muñoz:** *Planeación y desarrollo del proyecto* -
 [Perfil de GitHub](https://github.com/danielrincon-m)
+**Paula Andrea Guevara Sánchez:** *Planeación y desarrollo del proyecto* -
+[Perfil de GitHub](https://github.com/PaulaSanchez810)
+**Alan Yesit Marín Medez:** *Planeación y desarrollo del proyecto* -
+[Perfil de GitHub](https://github.com/Elan-MarMEn)
 
 ## Licencia 🚀
 
