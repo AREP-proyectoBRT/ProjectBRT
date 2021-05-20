@@ -18,6 +18,9 @@ La arquitectura de los servicios se muestra a continuación:
 
 ![Arquitectura](https://github.com/AREP-proyectoBRT/ProjectBRT/blob/main/img/Arquitectura%20de%20la%20solución.png)
 
+## Documento de diseño 📄
+
+![Paper](https://github.com/AREP-proyectoBRT/ProjectBRT/blob/main/img/Arquitectura%20de%20la%20solución.png)
 
 ## Implementación 🛡️
 
@@ -56,20 +59,6 @@ Las pruebas pueden ser ejecutadas desde la sección de pruebas de su IDE o si ti
 ```
 mvn test
 ```
-
-## Documentación del código fuente 🌎
-
-La documentación del proyecto puede ser encontrada en la carpeta [TempConverter/docs](TempConverter/docs).
-
-También puede ser generada con Maven, clonando el proyecto y ejecutando el siguiente comando en la carpeta TempConverter:
-
-```
-mvn javadoc:javadoc
-```
-
-## Documento de diseño 📄
-
-Este laboratorio no cuenta con documento de diseño.
 
 ## Herramientas utilizadas 🛠️
 
