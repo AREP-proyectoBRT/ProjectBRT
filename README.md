@@ -16,7 +16,7 @@ En este documento hablaremos sobre la importancia que tienen las nuevas tecnolog
 
 La arquitectura de los servicios se muestra a continuación:
 
-![Arquitectura](img/arquitectura.png)
+![Arquitectura](https://github.com/AREP-proyectoBRT/ProjectBRT/blob/main/img/Arquitectura%20de%20la%20solución.png)
 
 
 ## Implementación 🛡️
